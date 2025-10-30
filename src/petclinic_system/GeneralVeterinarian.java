@@ -15,7 +15,7 @@ public class GeneralVeterinarian implements Veterinarian {
         return name;
     }
 
-    // מימוש השיטה examinePet
+    
     @Override
     public String examinePet(Pet pet) {
         String exam = String.format("--- בדיקה כללית על ידי ד\"ר %s ---\n", name);

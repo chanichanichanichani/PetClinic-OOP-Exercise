@@ -6,7 +6,7 @@ package petclinic_system;
  */
 public class SpecialistVeterinarian implements Veterinarian {
     private String name;
-    public String specialty; // שיניתי ל-public רק לנוחות הדפסה ב-main
+    private String specialty; // שיניתי ל-public רק לנוחות הדפסה ב-main
 
     public SpecialistVeterinarian(String name, String specialty) {
         this.name = name;
@@ -18,6 +18,9 @@ public class SpecialistVeterinarian implements Veterinarian {
         return name;
     }
 
+    public String getSpecialty() {
+        return specialty;
+    }
     // מימוש השיטה examinePet (עם התמחות)
     @Override
     public String examinePet(Pet pet) {
