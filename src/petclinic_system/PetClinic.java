@@ -6,9 +6,10 @@ import java.util.List;
 
 public class PetClinic {
 
-    public static void main
+    public static void main3
+    
     (String[] args) {
-        System.out.println("🩺 *** מערכת ניהול מרפאת חיות מחמד *** 🐾\n");
+        System.out.println(" *** מערכת ניהול מרפאת חיות מחמד *** 🐾\n");
 
         // 1. יצירת חיות מחמד
         List<Pet> pets = new ArrayList<>();
@@ -30,7 +31,7 @@ public class PetClinic {
         Veterinarian specialistVet = new SpecialistVeterinarian("דניאל לוי", "אורתופדיה");
         
         System.out.printf("הוטרינרים שלנו: ד\"ר %s (כללי) וד\"ר %s (מומחה ל%s)\n\n", 
-                          generalVet.getName(), specialistVet.getName(), ((SpecialistVeterinarian)specialistVet).specialty);
+                          generalVet.getName(), specialistVet.getName(), ((SpecialistVeterinarian)specialistVet).getSpecialty());
 
 
         // 3. 
@@ -44,7 +45,5 @@ public class PetClinic {
             System.out.println(specialistVet.examinePet(pet));
         }
 
-        System.out.println("==================================================");
-        System.out.println("\n סיום הדגמת המערכת בהצלחה.");
     }
 }
